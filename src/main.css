@@ -72,3 +72,33 @@ footer a:hover{
 .home-cover p{
   margin-bottom: 10px;
 }
+.blog-card{
+  width: 96%;
+  margin: 10px auto;
+}
+.blog-index{
+  color: #fff;
+  background-color: brown;
+  text-align: center;
+  line-height: 36px;
+}
+.blog-desc{
+  padding-left: 10px;
+  box-shadow: 3px 3px 6px brown;
+  position: relative;
+}
+.blog-desc p{
+  color: #000;
+}
+.blog-desc span{
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  color: #000;
+}
+.blog-desc a{
+  padding: 8px 12px;
+  background-color: brown;
+  border: 1px solid brown;
+  border-radius: 5px;
+}
