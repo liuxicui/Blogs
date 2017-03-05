@@ -2,16 +2,32 @@ import React from 'react';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
+import LeftNav from './components/LeftNav';
 
 class App extends React.Component {
+  constructor(){
+    super();
+    this.state={
+      showLeftNav:false
+    }
+  }
+  componentWillMount(){
+    this.setLeftNav();
+  }
+  setLeftNav(){
+    this.setState({showLeftNav : window.innerWidth > 750 ? true : false})
+  }
+  componentDidMount(){
+    window.onresize = this.setLeftNav.bind(this);
+  }
   render () {
     return(
       <div className='root'>
-        <Header />
+        {this.state.showLeftNav ? <LeftNav /> : <Header />}
         <div className='mywrap'>
           {this.props.children}
         </div>
-        <Footer />
+        {this.state.showLeftNav ? null : <Footer />}
       </div>
     )
   }

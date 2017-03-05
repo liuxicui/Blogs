@@ -19,6 +19,32 @@ a{
   flex-direction: column;
   height: 100%;
 }
+@media(min-width: 750px){
+  .root{
+    flex-direction: row;
+  }
+}
+.leftnav{
+  background-color: brown;
+  width: 260px;
+}
+.leftnav h1{
+  text-align: center;
+  color: #fff;
+  line-height: 2.2;
+  letter-spacing: 14px;
+}
+.leftnav a{
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 2.2;
+  padding-left: 20px;
+}
+.leftnav a:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+}
 header{
   height: 80px;
   flex-shrink: 0;
