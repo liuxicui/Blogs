@@ -1,24 +1,17 @@
-# 博客介绍
+ # 博客介绍
 
 ```
 console.log(res);
 ```
 
 ```
-.blog-desc span{
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  color: #000;
-  opacity: 0.7;
-}
-.blog-desc a{
-  display: block;
-  width: 90px;
-  padding: 8px 12px;
-  background-color: brown;
-  border: 1px solid brown;
-  border-radius: 5px;
-  color: #fff;
-}
+<div className='home'>
+  <div className='home-cover'>
+    <div style={{width:'100%'}}>
+      <h1>我的博客</h1>
+      <p>前端工程师</p>
+      <button><a href='https://github.com/liuxicui'>点击</a></button>
+    </div>
+  </div>
+</div>
 ```
