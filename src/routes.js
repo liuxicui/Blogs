@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Blog from './components/Blog';
 import Search from './components/Search';
 import About from './components/About';
+import Post from './components/Post';
 
 export default function(){
   return(
@@ -15,6 +16,7 @@ export default function(){
         <Route path='blog' component={Blog} />
         <Route path='search' component={Search} />
         <Route path='about' component={About} />
+        <Route path='post/:title' component={Post} />
       </Route>
     </Router>
   )
