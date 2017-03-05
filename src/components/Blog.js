@@ -15,7 +15,6 @@ class Blog extends React.Component {
     .then(res => this.setState({data:res.data}))
   }
   render () {
-    console.log(this.state.data);
     return(
       <div style={{width:'100%'}}>
         {this.state.data.length == 0 ? '请稍后' :
